@@ -1,3 +1,11 @@
+# Adding some designs in the program
+from pyfiglet import Figlet
+from termcolor import colored
+
+f = Figlet(font='serifcap', width = 55)
+print(colored(f.renderText("Television"), 'light_green'))
+print(colored(("=" * 52), color='light_green'))
+
 # Creating the class named TV
 class TV:
     def __init__(self, channel = 1, volume_level = 1, tv_on = True):
