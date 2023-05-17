@@ -23,3 +23,7 @@ class TV:
         if channel < 1 or channel > 120: 
             raise ValueError("Invalid channel number")
         self.channel = channel
+
+    def get_volume(self):
+        # Returns the current volume level of the TV 
+        return self.volume_level
