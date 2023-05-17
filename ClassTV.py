@@ -1,6 +1,6 @@
 # Creating the class named TV
 class TV:
-    def __init__(self, channel=1, volume_level=1, tv_on=True):
+    def __init__(self, channel = 1, volume_level = 1, tv_on = True):
         # creating the class instances
         self.channel = channel
         self.volume_level = volume_level
