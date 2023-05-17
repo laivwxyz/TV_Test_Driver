@@ -17,3 +17,9 @@ class TV:
     def get_channel(self):
         # Returns the current channel of the TV
         return self.channel
+    
+    def set_channel(self, channel : int):
+        # Sets a new channel for the TV
+        if channel < 1 or channel > 120: 
+            raise ValueError("Invalid channel number")
+        self.channel = channel
