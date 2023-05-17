@@ -33,3 +33,8 @@ class TV:
         if volume_level < 1 or volume_level > 7:
             raise ValueError("Invalid volume level")
         self.volume_level = volume_level
+
+    def channel_up(self):
+        # Increases the channel by 1
+        if self.channel < 120:
+            self.channel += 1
