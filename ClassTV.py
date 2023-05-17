@@ -27,3 +27,9 @@ class TV:
     def get_volume(self):
         # Returns the current volume level of the TV 
         return self.volume_level
+    
+    def set_volume(self, volume_level : int):
+        # Sets new volume level for the TV
+        if volume_level < 1 or volume_level > 7:
+            raise ValueError("Invalid volume level")
+        self.volume_level = volume_level
