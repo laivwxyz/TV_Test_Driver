@@ -21,7 +21,7 @@ class TV:
     def set_channel(self, channel : int):
         # Sets a new channel for the TV
         if channel < 1 or channel > 120: 
-            raise ValueError("Invalid channel number")
+            raise ValueError("\033[91mInvalid channel number")
         self.channel = channel
 
     def get_volume(self):
@@ -31,7 +31,7 @@ class TV:
     def set_volume(self, volume_level : int):
         # Sets new volume level for the TV
         if volume_level < 1 or volume_level > 7:
-            raise ValueError("Invalid volume level")
+            raise ValueError("\033[91mInvalid volume level")
         self.volume_level = volume_level
 
     def channel_up(self):
