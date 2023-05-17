@@ -9,3 +9,7 @@ class TV:
     def turn_on(self):
         # Turns on the Tv
         self.tv_on = True
+
+    def turn_off(self):
+        # Turns off the TV
+        self.turn_on = False
