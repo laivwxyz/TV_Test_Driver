@@ -48,4 +48,8 @@ class TV:
         # Increases the volume level by 1
         if self.volume_level < 7:
             self.volume_level += 1
-    
+
+    def volume_down(self):
+        # Decreases the volume level by 1
+        if self.volume_level > 1:
+            self.volume_level -= 1
