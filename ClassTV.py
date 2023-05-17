@@ -38,3 +38,9 @@ class TV:
         # Increases the channel number by 1
         if self.channel < 120:
             self.channel += 1
+
+    def channel_down(self):
+        # Decreases the channel number by 1
+        if self.channel > 1:
+            self.channel += 1
+    
