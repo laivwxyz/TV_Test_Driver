@@ -16,3 +16,15 @@ def test_tv():
 
     # Display TV information
     print(f"TV1's channel is {tv1.get_channel()} and volume level is {tv1.get_volume()}")
+
+    # Creating the second TV object
+    tv2 = TV()
+    tv2.turn_on()
+    tv2.get_channel()
+    tv2.set_channel()
+    tv2.get_volume()
+    tv2.set_volume()
+    tv2.channel_up()
+    tv2.channel_down()
+    tv2.volume_up()
+    tv2.volume_down()
