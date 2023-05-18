@@ -21,9 +21,6 @@ def test_tv():
     tv1.volume_up()
     tv1.volume_down()
 
-    # Display TV information
-    print("\033[92m>>>>>>", "\033[m",f"TV1's channel is {tv1.get_channel()} and volume level is {tv1.get_volume()}")
-
     # Creating the second TV object
     tv2 = TV()
     tv2.turn_on()
@@ -37,6 +34,7 @@ def test_tv():
     tv2.volume_down()
 
     # Display TV information
+    print("\033[92m>>>>>>", "\033[m",f"TV1's channel is {tv1.get_channel()} and volume level is {tv1.get_volume()}")
     print("\033[92m>>>>>>", "\033[m",f"TV2's channel is {tv2.get_channel()} and volume level is {tv2.get_volume()}")
     print('\033[92m=' * 66 , "END", '\033[92m=' * 66 )
 
