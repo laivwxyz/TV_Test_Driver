@@ -5,9 +5,8 @@ from termcolor import colored
 # Importing class TV from ClassTV.py
 from ClassTV import TV
 
-f = Figlet(font='standard', width = 70)
+f = Figlet(font='serifcap', width = 140)
 print(colored(f.renderText("Program output: "), 'light_green'))
-print(colored(("=" * 52), color='light_green'))
 
 def test_tv():
     # Creating the first TV object
@@ -23,7 +22,7 @@ def test_tv():
     tv1.volume_down()
 
     # Display TV information
-    print(f"TV1's channel is {tv1.get_channel()} and volume level is {tv1.get_volume()}")
+    print("\033[92m>>>>>>", "\033[m",f"TV1's channel is {tv1.get_channel()} and volume level is {tv1.get_volume()}")
 
     # Creating the second TV object
     tv2 = TV()
@@ -38,7 +37,8 @@ def test_tv():
     tv2.volume_down()
 
     # Display TV information
-    print(f"TV2's channel is {tv2.get_channel()} and volume level is {tv2.get_volume()}")
+    print("\033[92m>>>>>>", "\033[m",f"TV2's channel is {tv2.get_channel()} and volume level is {tv2.get_volume()}")
+    print('\033[92m=' * 66 , "END", '\033[92m=' * 66 )
 
 # Run the test_tv function
 test_tv()
