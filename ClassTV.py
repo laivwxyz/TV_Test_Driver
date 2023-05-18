@@ -2,12 +2,12 @@
 from pyfiglet import Figlet
 from termcolor import colored
 
-f = Figlet(font='serifcap', width = 55)
+f = Figlet(font='isometric2', width = 140)
 print(colored(f.renderText("Television"), 'light_green'))
-print(colored(("=" * 52), color='light_green'))
+print(colored(("=" * 137), color='light_green'))
 print("\033[92mProgram by: \033[0mLailanie E. Dela Cruz BSCPE 1-4")
 print ("\033[92mExercise: \033[0mAssignment #6")
-print(colored(("=" * 52), color= 'light_green'))
+print(colored(("=" * 137), color= 'light_green'))
 
 # Creating the class named TV
 class TV:

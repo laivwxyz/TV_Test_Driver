@@ -1,5 +1,13 @@
+# Adding some designs in the program
+from pyfiglet import Figlet
+from termcolor import colored
+
 # Importing class TV from ClassTV.py
 from ClassTV import TV
+
+f = Figlet(font='standard', width = 70)
+print(colored(f.renderText("Program output: "), 'light_green'))
+print(colored(("=" * 52), color='light_green'))
 
 def test_tv():
     # Creating the first TV object
