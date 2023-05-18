@@ -31,3 +31,6 @@ def test_tv():
 
     # Display TV information
     print(f"TV2's channel is {tv2.get_channel()} and volume level is {tv2.get_volume()}")
+
+# Run the test_tv function
+test_tv()
